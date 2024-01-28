@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/RLayot"
+        android:layout_width="404dp"
+        android:layout_height="641dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonResume"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="297dp"
+            android:layout_marginEnd="127dp"
+            android:layout_marginBottom="294dp"
+            android:text="Resume Game" />
+
+        <Button
+            android:id="@+id/buttonNewGame"
+            android:layout_width="156dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="354dp"
+            android:layout_marginEnd="127dp"
+            android:layout_marginBottom="239dp"
+            android:text="New Game"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/gameBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="589dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="39dp"
+            android:background="#000000"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/PlayAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="118dp"
+                android:layout_marginTop="500dp"
+                android:text="GG! Play again?" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ScoreTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="615dp"
+            android:layout_marginBottom="28dp"
+            android:background="@color/purple_700"
+            android:backgroundTint="@color/purple_700"
+            android:text="Score: 0"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="40dp"
+        android:text="Pause"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
